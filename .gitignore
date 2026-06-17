@@ -1,0 +1,41 @@
+# =========================
+# 1. Security (CRITICAL)
+# =========================
+.env
+.env.*
+*.pem
+
+# =========================
+# 2. Virtual Environments
+# =========================
+# Keeps your repo lightweight by ignoring the massive Python packages
+.venv/
+venv/
+env/
+
+# =========================
+# 3. ADK & Local Databases
+# =========================
+# The ADK uses local SQLite/DB files to store agent memory and state
+*.db
+*.sqlite3
+agent.db
+state.db
+adk_memory/
+
+# =========================
+# 4. Python Cache Files
+# =========================
+# Compiled byte-code that Python generates automatically
+__pycache__/
+*.py[cod]
+*$py.class
+
+# =========================
+# 5. IDE & Editor Workspaces
+# =========================
+# Keeps out personal workspace settings if you are vibe coding in Cursor or VS Code
+.vscode/
+.cursor/
+.idea/
+.DS_Store
